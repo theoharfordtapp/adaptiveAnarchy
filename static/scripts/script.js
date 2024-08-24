@@ -1,15 +1,6 @@
 import { getFirestore, getDocs, collection, doc, setDoc } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore.js";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.0/firebase-app.js";
-
-const firebaseConfig = {
-    apiKey: "AIzaSyAVD7Zc-XKtjfDg4pjxL8b9QmuwxEY0eHM",
-    authDomain: "adaptiveanarchybase.firebaseapp.com",
-    projectId: "adaptiveanarchybase",
-    storageBucket: "adaptiveanarchybase.appspot.com",
-    messagingSenderId: "256141998502",
-    appId: "1:256141998502:web:eaab803dab5b9c723a3767",
-    measurementId: "G-N8M3QYTZZY"
-};
+import { firebaseConfig } from "./secret.js";
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
