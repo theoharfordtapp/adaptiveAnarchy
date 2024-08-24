@@ -22,6 +22,8 @@ Note that some moves are there several times. The bot will choose a random move 
 ---
 ### Notes
 
+No move can be completely stopped. Every legal move has a small chance of happening, but it can be almost nothing.
+
 Moves that are ambiguous can be incorrectly considered legal or illegal. For instance, if two knights are aiming at the same spot, and you try to move one, the move will be considered ambiguous because I haven't perfect the system that converts moves into algebraic notation. The game will not allow you to make that move.
 
 Similarly, if you try to move your starting pawn (for example) to a different column, the algebraic notation will not mention the starting position, and will be ambgiguous, so the game will move the more logical pawn instead of the one you moved.
